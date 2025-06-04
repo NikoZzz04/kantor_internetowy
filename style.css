@@ -177,14 +177,15 @@ nav ul li:hover, button:hover {
         height: 150px;
     }
     #leftGames{
-        padding: 150px;
+        padding-left: 150px;
     }
     #left{
         width: 100%;
     }
     #right{
         width: 100%;
-        padding-left: 200px;
+        align-items: center;
+        justify-content: center;
     }
     main{
         flex-direction: column;
@@ -215,5 +216,6 @@ nav ul li:hover, button:hover {
     .gra{
         width: 100px;
         height: 100px;
+        font-size: xx-small;
     }
 }
