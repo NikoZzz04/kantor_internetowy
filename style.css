@@ -156,54 +156,64 @@ nav ul li:hover, button:hover {
         right: auto;
         bottom: auto;
     }
-}
-@media only screen and (max-width: 1000px){
-    body{
-        font-size: 15px;
-    }
     .gra{
         width: 200px;
         height: 200px;
         font-size: x-small;
     }
+}
+@media only screen and (max-width: 1000px){
+    body{
+        font-size: 15px;
+    }
     .card, .ansr{
     height: 115px;
     width: 75px;
-}
+    }
 }
 @media only screen and (max-width: 800px){
     .gra{
         width: 150px;
         height: 150px;
-}
-}
-@media only screen and (max-width: 600px){
-    body{
-        font-size: 10px;
     }
-    nav{
-        flex-direction: column;
-        padding: 15px;
-    }
-    nav ul{
-        flex-direction: column;
-    }
-    nav ul li{
-        padding: 30px;
-    }
-    main{
-        flex-direction: column;
+    #leftGames{
+        padding: 150px;
     }
     #left{
         width: 100%;
     }
     #right{
         width: 100%;
+        padding-left: 200px;
     }
+    main{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav{
+        padding: 15px;
+    }
+    nav ul li{
+        padding: 30px;
+    }
+}
+@media only screen and (max-width: 600px){
+    body{
+        font-size: 10px;
+    } 
     #buttons{
         flex-direction: column;
     }
     #inpts{
         flex-direction: column;
+    }
+    .gra{
+        width: 100px;
+        height: 100px;
     }
 }
