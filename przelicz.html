@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Witaj w kantorze internetowym</h1>
+        <h3>U nas wymienisz każdą walutę</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="przelicz.html">Przelicznik walut</a></li>
+            <li><a href="historia.html">Historia pieniądza</a></li>
+            <li><a href="minigames.html">Minigry</a></li>
+        </ul>
+        <button id="dl">Tryb jasny/ciemny</button>
+    </nav>
+    <main>
+        <section id="left">
+            <h4>Zobacz ile możesz dostać w naszym kantorze!</h4>
+            <button id="buySell" onclick="przelacz()">Kup/sprzedaj</button>
+            <label for="">Wybierz walutę</label>
+            <select id="waluta"></select>
+            <div id="inpts">
+                <input type="number" placeholder="wpisz kwotę PLN" id="in">
+                <input type="number" id="out">
+            </div>
+            <button onclick="licz()">Licz</button>
+
+            
+        </section>
+        <section id="right">
+            <p>Aktualne kursy walut</p><br><br>
+            <table id="waluty">
+                <tr><th>kod</th><th>kupno</th><th>sprzedaż</th></tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        &copy;Nikodem Żuk 2025
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
